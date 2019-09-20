@@ -1,15 +1,9 @@
-function solve(language){
-if(language== 'England' || 'USA'){
-    console.log('English')
-}else if(month==2){
-    console.log('February')
-}else if(month==3){
-        console.log('March')
-}else if(month==4){
-                          
-}else{
-    console.log('Error')
-}
-}
-
-solve('USA')
+function solve(lang){
+    if(lang == 'England' || lang =='USA'){
+        console.log('English')
+    }else if(lang == 'Spain' || lang == 'Mexico'|| lang == 'Argentina'){
+        console.log('Spanish')                          
+    }else{
+        console.log('unknown')
+    }
+    }
