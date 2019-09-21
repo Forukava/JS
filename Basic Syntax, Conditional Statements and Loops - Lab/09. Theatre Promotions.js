@@ -1,5 +1,6 @@
 function solve(day, age){
-    if(day == 'Weekday' && 0<age>=18){
+    if(day == 'Weekday')
+        else if(0<age>=18){
     console.log('12$');
 }else if(day == 'Weekday' && 18<age>=64){
     console.log('18$');
@@ -20,5 +21,6 @@ console.log('10$');
 }else{
     console.log('Error!');
 }
+
 }
-solve('Holiday', 15)
+solve('Weekday', 15)
