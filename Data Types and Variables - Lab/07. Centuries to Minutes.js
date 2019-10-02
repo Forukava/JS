@@ -1,7 +1,8 @@
-function solve(dist, pass, price){
-let needFuel = (dist/100) * 7;
-needFuel += pass*0.100;
-let total = needFuel*price;
-console.log(`Needed money for that trip is ${total}lv.`)
-}
-solve(260, 9, 2.49)
+function solve(centuries){
+    let years = centuries * 100;
+    let days = Math.trunc(years * 365.2422);
+    let hours = days * 24;
+    let minutes = hours * 60;
+    console.log(`${centuries} centuries = ${years} years = ${days} days = ${hours} hours = ${minutes} minutes`)
+    }
+solve(1)
