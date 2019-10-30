@@ -1,6 +1,7 @@
 function solve(arr){
-let da = Number(arr)
-console.log(da)
+let one = Number(arr.shift());
+let second = Number(arr.pop())
+console.log(one + second)
 }
 
 solve(['20', '30', '40'])
