@@ -25,3 +25,5 @@ function solve(orig){
   console.log(origSum);
   console.log(modSum);
 }
+
+solve([5, 15, 23, 56, 35])
