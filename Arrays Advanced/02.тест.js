@@ -1,6 +1,10 @@
 function solve(arr){
-const arr1 = arr.map(x => x - 2)
-console.log(arr1)
-} 
-solve([1,5,6,7])
-
+    
+    let res = arr
+    .filter(x => x % 2 !=0)
+    .map(x =>x * 2)
+    .reverse()
+console.log(res.join(' '))
+    } 
+    
+    solve([10,15,20,25])
