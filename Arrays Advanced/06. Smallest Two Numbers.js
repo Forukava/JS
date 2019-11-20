@@ -1,8 +1,8 @@
 function solve(arr){
-let res = arr.filter(i => i<20)
-.reverse()
-.join(' ')
-console.log(res)
+let res = arr.sort((a,b) => {return a-b})
+res.splice(2)
+
+console.log(res.join(' '))
 }
 
 
