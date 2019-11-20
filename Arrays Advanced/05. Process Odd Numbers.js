@@ -1,10 +1,11 @@
 function solve(arr){
     
   let res = arr
-  .filter((x, i) =>i % 2 !=0)
+  .filter((num, i) =>i % 2 == 1)
   .map(x =>x * 2)
   .reverse()
-console.log(res.join(' '))
+  .join(' ')
+console.log(res)
   } 
   
-  solve([10,15,20,25])
+  solve([3, 0, 10, 4, 7, 3])

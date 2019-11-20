@@ -1,5 +1,8 @@
-function solve(n, k){
-
+function solve(arr){
+let res = arr.filter(i => i<20)
+.reverse()
+.join(' ')
+console.log(res)
 }
 
 
