@@ -1,11 +1,9 @@
-function solve(firstName,lastName, age){
-    const obj = {firstName: firstName, lastName: lastName, age: age}
+function solve(one,two, three, four, five){
+    const obj = {name: one, area: two, population: three, country: four, postCode: five}
 
-    for(let prop in obj){
-        console.log(`${prop}: ${obj[prop]}`)
+    for(let property in obj){
+        console.log(`${property} -> ${obj[property]}`)
     }
 }
-solve("Peter", 
-"Pan",
-"20"
-)
+solve("Sofia"," 492", "1238438", "Bulgaria", "1000")
+
