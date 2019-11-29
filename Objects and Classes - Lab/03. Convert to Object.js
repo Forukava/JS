@@ -1,11 +1,10 @@
-function solve(){
-    let data ='{"name": "George", "age": 40, "town": "Sofia"}'
-    const obj = JSON.parse(data)
+function solve(obj){
+    obj = JSON.parse(obj)
     for (const key in obj) {
         if (obj.hasOwnProperty(key)) {
-            const element = obj[key];
-            console.log(`${key}: ${element}`)
+            const value = obj[key];
+            console.log(`${key}: ${value}`)
         }
     }
 }
-solve()
+solve('{"name": "George", "age": 40, "town": "Sofia"}')
