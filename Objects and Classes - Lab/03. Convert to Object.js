@@ -1,9 +1,11 @@
-function solve(one,two, three, four, five){
-    const obj = {name: one, area: two, population: three, country: four, postCode: five}
-
-    for(let property in obj){
-        console.log(`${property} -> ${obj[property]}`)
+function solve(){
+    let data ='{"name": "George", "age": 40, "town": "Sofia"}'
+    const obj = JSON.parse(data)
+    for (const key in obj) {
+        if (obj.hasOwnProperty(key)) {
+            const element = obj[key];
+            console.log(`${key}: ${element}`)
+        }
     }
 }
-solve("Sofia"," 492", "1238438", "Bulgaria", "1000")
-
+solve()
