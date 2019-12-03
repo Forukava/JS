@@ -1,6 +1,6 @@
 function solve(arr){
-    arr.forEach((el) => console.log(el))
+    arr.forEach((i,el) => console.log(i,el))
         
     
 }
-solve([1,2,3,4,5])
+solve([12,25,32,43,544])
