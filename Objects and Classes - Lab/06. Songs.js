@@ -1,16 +1,33 @@
 function solve(arr){
-    class Cat{
-        constructor(name, age){
+    class Song {
+        constructor(type, name, time){
+            this.type = type
             this.name = name
-            this.age = age
-            this.meow = () => console.log(`${this.name}, age ${this.age} says Meow`)
-        }
+            this.time = time
+     }
     }
-    arr.forEach(function(el){
-        let [name,age] = el.split(' ')
-        let cat = new Cat(name,age)
-        cat.meow()
-    });
+let songs  = []
+let numberOfSongs = input.shift()
+let typeSOng = input.pop()
 
+for (let i = 0; i <numberOfSongs.length; i++) {
+  let[type, name, time] = input[i].split('_')
+  let song = new Song(type,name,time)
+  songs.push(song)
+  if(typeSOng === 'all'){
+      songs.forEach((i) => console.log(i.name))
+  }else{
+      let filtered = songs.filtered((i) => i.type === typeSong)
+      filtered.forEach((i) => console.log(i.name))
+  }
+    
+    }
 }
-solve(['Mellow 2', 'Tom 5'])
+
+
+solve([3,
+    'favourite_DownTown_3:14',
+    'favourite_Kiss_4:16',
+    'favourite_Smooth Criminal_4:01',
+    'favourite']
+    )
