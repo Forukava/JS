@@ -1,6 +1,12 @@
 function solve(arr){
-    arr.forEach((i,el) => console.log(i,el))
-        
+    let data = {}
+        for (let row of arr) {
+            const [town, latitude, longitude] = row.split(' | ')
+            console.log(town, latitude, longitude)
+        }
+       
     
 }
-solve([12,25,32,43,544])
+solve(['Sofia | 42.696552 | 23.32601',
+'Beijing | 39.913818 | 116.363625']
+)
