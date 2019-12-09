@@ -1,15 +1,28 @@
-function solve(arr){
-    let data = {}
-        for (let row of arr) {
-            const tokens = row.split(' | ')
-            const obj = {
-                town: tokens[0],
-                latitude: Number(tokens[1]).toFixed(2),
-                longitude: Number(tokens[2]).toFixed(2)
-            }
-            console.log(obj)
-        }
+function solve(arr1, arr2){
+    let store = {};
+    let available = restock(arr1, {})
+    let productDel = restock(arr2, available)
+console.log(productDel)
+    function restock(arr,obj){
+for (let i = 0; i < arr.length; i+=2) {
+    const product = arr[i];
+    const quantity = Number(arr[i+1]);
+    
+   
+    if(!obj.hasOwnProperty(product)){
+        obj[product] = quantity;
+    }else{
+        obj[product] += quantity;
+    }
 }
-solve(['Sofia | 42.696552 | 23.32601',
-'Beijing | 39.913818 | 116.363625']
-)
+return obj
+}
+
+}
+solve([
+    'Chips', '5', 'CocaCola', '9', 'Bananas', '14', 'Pasta', '4', 'Beer', '2'
+    ],
+    [
+    'Flour', '44', 'Oil', '12', 'Pasta', '7', 'Tomatoes', '70', 'Bananas', '30'
+    ]
+)    
