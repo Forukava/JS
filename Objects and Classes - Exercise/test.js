@@ -1,7 +1,6 @@
-let person = {
-    name: 'pavel',
-    age: '40'
-}
+let  arr = []
+arr.push({name: Ivan})
+console.log(arr)
 
 
-console.log(Object.keys(person))
+

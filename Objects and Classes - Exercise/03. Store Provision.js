@@ -2,7 +2,11 @@ function solve(arr1, arr2){
     let store = {};
     let available = restock(arr1, {})
     let productDel = restock(arr2, available)
-console.log(productDel)
+    for(let product of Object.keys(productDel)){
+        console.log(`${product} => ${productDel[product]}`)
+    }
+
+
     function restock(arr,obj){
 for (let i = 0; i < arr.length; i+=2) {
     const product = arr[i];
