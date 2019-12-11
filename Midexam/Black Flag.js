@@ -13,7 +13,7 @@ for (let day = 1; day <= days; day++) {
         total -= total * 0.3
     }
 }
-    if(total >=expect){
+    if(total >= expect){
         return `Ahoy! ${total.toFixed(2)} plunder gained.`
     }else{
         let percentage = total / expect * 100;
