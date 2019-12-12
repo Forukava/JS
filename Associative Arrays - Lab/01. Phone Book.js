@@ -1,12 +1,12 @@
 function solve(input){
 let arr = {};
 
-input.array.forEach(element => {
+input.forEach(element => {
     let data = element.split(' ');
-    arr[data[0]] = data[1]]
+    arr[data[0]] = data[1]
 });
 for (const key in arr) {
-        console.log(`${key} =>, ${arr[key]}`)
+        console.log(`${key} -> ${arr[key]}`)
 }
 }
 solve(['Tim 0834212554',
