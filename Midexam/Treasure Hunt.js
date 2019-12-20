@@ -1,6 +1,6 @@
 function solve(input){
     let loot = input.shift().split('|')
-    
+    console.log(loot)
     for (const element of input) {
         if(element === 'Yohoho!'){
             break;
