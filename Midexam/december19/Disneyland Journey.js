@@ -1,7 +1,7 @@
-function disney(jour, month){
-    let journeyCost = jour
-    let needMonth = month
-    
+function disney(input){
+    let journeyCost = input.shift()
+    let needMonth = input.shift()
+   
     let sum = []
     
     for (let i = 1; i <= needMonth; i++) {
@@ -18,11 +18,15 @@ function disney(jour, month){
         if(finish > journeyCost){
             let end = finish - journeyCost
             console.log(`Bravo! You can go to Disneyland and you will have ${end}lv. for souvenirs.`)
-        }else{
+        }else if(journeyCost>finish){
             let end1 = journeyCost - finish
             console.log(`Sorry. You need ${end1}lv. more.`)
         }
     }
 }
 
+<<<<<<< HEAD
 disney(1000, 4)
+=======
+disney([1000, 4])
+>>>>>>> aba7b12895ce7f4e8a519f13a9e2b402b2d7cf3a
