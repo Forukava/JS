@@ -25,4 +25,4 @@ function disney(jour, month){
     }
 }
 
-disney(3600, 6)
+disney(1000, 4)
