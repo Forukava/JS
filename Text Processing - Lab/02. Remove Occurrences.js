@@ -1,9 +1,8 @@
-function solve(text){
-let old
-while(old !== text){
-    old = text
-    old.replace()
+function solve(word, text){
+let result = text
+while(result.indexOf(word) != -1){
+    result = result.replace(word, '')
 }
-console.log(text)
+console.log(result)
 }
-solve('ice kicegiciceeb')
+solve('ice', 'kicegiciceeb')
