@@ -1,7 +1,8 @@
 function solve(input){
-for (const ch of input) {
-    console.log(ch)
-    
+    let entries = Array.from(input)
+entries.forEach(element => {
+    console.log(element)
+});
 }
-}
+
 solve('AWord')

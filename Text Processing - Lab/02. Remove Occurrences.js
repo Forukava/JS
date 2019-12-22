@@ -1,6 +1,9 @@
-function solve(input){
-for (const ch of input) {
-    console.log(ch)
+function solve(text){
+let old
+while(old !== text){
+    old = text
+    old.replace()
 }
+console.log(text)
 }
-solve('AWord')
+solve('ice kicegiciceeb')
