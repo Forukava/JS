@@ -1,7 +1,5 @@
-function solve(string, startI, count){
-    let pen = startI
-    let zen = count 
-    let result = string.substr(pen,zen.length)
-    console.log(result)
+function solve(text, startIndex, count){
+    let substring = text.substr(startIndex, count)
+    console.log(substring)
 }
 solve('ASentance', 1, 8)
