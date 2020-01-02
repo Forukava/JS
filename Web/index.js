@@ -1,2 +1,2 @@
-const http = require('http')
-console.log(http)
+const sayHello = require('./func.js')
+console.log(sayHello)
