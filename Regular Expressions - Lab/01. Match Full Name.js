@@ -1,6 +1,6 @@
-let regexp = new RegExp('[a-z]+', 'g');
-let text = 'This ?? is A wOrD';
-let arr = text.match(regexp)
-console.log(regexp.exec(text))
-console.log(regexp.exec(text))
-console.log(regexp.exec(text))
+function solve(input){
+let regexp = /[A-Z][a-z]+ [A-Z][a-z]+/g
+let arr = input.match(regexp)
+console.log(arr.join(' '))
+}
+solve('ivan ivanov, Ivan ivanov, ivan Ivanov, IVan Ivanov, Ivan IvAnov, Ivan	Ivanov')
