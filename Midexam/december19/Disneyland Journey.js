@@ -25,8 +25,6 @@ function disney(input){
     }
 }
 
-<<<<<<< HEAD
-disney(1000, 4)
-=======
+
 disney([1000, 4])
->>>>>>> aba7b12895ce7f4e8a519f13a9e2b402b2d7cf3a
+
