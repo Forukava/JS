@@ -8,6 +8,15 @@ for (const el of input) {
   let tokens = el.split(' ')
   let command = tokens.shift()
   console.log(command)
+  
+  switch(command){
+    case 'Loot':
+      break;
+    case 'Drop':
+      break;
+    case 'Steal':
+      break;
+  }
 
   
 }
