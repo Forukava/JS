@@ -1,13 +1,24 @@
 function solve(input){
-let tool = input.shift().split('|')
+let loot = input.shift().split('|') 
 
-for (const element of input) {
-    if(element === "Yohoho!"){
-        break;
-    }
-    let boo = element.split(' ')
-    //console.log(boo)
-    console.log(element)
+for (const el of input) {
+  if(el === "Yohoho!"){
+    break;
+  }
+  let tokens = el.split(' ')
+  let command = tokens.shift()
+  console.log(command)
+  
+  switch(command){
+    case 'Loot':
+      break;
+    case 'Drop':
+      break;
+    case 'Steal':
+      break;
+  }
+
+  
 }
 
 }
